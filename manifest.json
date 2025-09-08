@@ -3,7 +3,7 @@
   "name": "Idle game",
   "icons": [
     {
-      "src": "/icon.png",
+      "src": "icon.png",
       "type": "image/png",
       "sizes": "512x512"
     }
@@ -17,13 +17,13 @@
   "description": "Idler",
   "screenshots": [
     {
-      "src": "/icon.png",
+      "src": "icon.png",
       "type": "image/png",
       "sizes": "512x512",
       "form_factor": "narrow"
     },
     {
-      "src": "/icon.png",
+      "src": "icon.png",
       "type": "image/png",
       "sizes": "512x512",
       "form_factor": "wide"
