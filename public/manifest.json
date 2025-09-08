@@ -3,13 +3,13 @@
   "name": "Idle game",
   "icons": [
     {
-      "src": "/icon.png",
+      "src": "./icon.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
-  "id": "/",
-  "start_url": "/",
+  "id": "./",
+  "start_url": "./",
   "background_color": "#777777",
   "display": "fullscreen",
   "scope": "/",
@@ -17,13 +17,13 @@
   "description": "Idler",
   "screenshots": [
     {
-      "src": "/icon.png",
+      "src": "./icon.png",
       "type": "image/png",
       "sizes": "512x512",
       "form_factor": "narrow"
     },
     {
-      "src": "/icon.png",
+      "src": "./icon.png",
       "type": "image/png",
       "sizes": "512x512",
       "form_factor": "wide"

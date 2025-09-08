@@ -1,9 +1,9 @@
-const CACHE_NAME = 'pwa-cache-v0.0'; // increment on each deploy
+const CACHE_NAME = 'pwa-cache-v0.01'; // increment on each deploy
 const urlsToCache = [
-    '/',
-    '/main.js',
-    '/main.css',
-    '/icon.png',
+    './',
+    './main.js',
+    './main.css',
+    './icon.png',
     // add other static assets like CSS/images here
 ];
 
@@ -50,7 +50,7 @@ self.addEventListener('fetch', (event) => {
                     }
                     return response;
                 })
-                .catch(() => caches.match(request).then(cached => cached || caches.match('/offline.html')))
+                .catch(() => caches.match(request))
         );
     } else {
     // Cache-first for assets
