@@ -1,0 +1,38 @@
+{
+  "private": true,
+  "scripts": {
+    "lint": "eslint",
+    "start": "webpack serve --open",
+    "build": "webpack",
+    "start-build": "serve dist",
+    "gzipped": "serve -s dist",
+    "svgo": "svgo -f src/assets/original -r -o src/assets/optimized",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "engines": {
+    "node": ">=23.10.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.31.0",
+    "cheerio": "^1.1.2",
+    "compression-webpack-plugin": "^11.1.0",
+    "copy-webpack-plugin": "^13.0.1",
+    "css-loader": "^7.1.2",
+    "eslint": "^9.35.0",
+    "extra-watch-webpack-plugin": "^1.0.3",
+    "gh-pages": "^6.3.0",
+    "globals": "^16.3.0",
+    "html-webpack-plugin": "^5.6.4",
+    "mini-css-extract-plugin": "^2.9.4",
+    "sass": "^1.92.1",
+    "sass-loader": "^16.0.5",
+    "scss-reset": "^1.4.6",
+    "serve": "^14.2.5",
+    "svgo": "^4.0.0",
+    "terser-webpack-plugin": "^5.3.14",
+    "webpack": "^5.101.3",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2"
+  }
+}

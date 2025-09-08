@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <div style="display: none;">
+        <%= require("fs").readFileSync(htmlWebpackPlugin.options.HTML_PATH + "/assets/optimized/Follower-symbols.svg") %>
+    </div>
+
+    <div id="app"></div>
+
+    <button id="install-btn">INSTALL</button>
+
+    <%= require("fs").readFileSync(htmlWebpackPlugin.options.HTML_PATH + "/static/main.html") %>
+
+    <script src="main.js"></script>
+  </body>
+</html>

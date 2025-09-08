@@ -1,0 +1,214 @@
+@use 'scss-reset';
+
+body {
+    background: #eee;
+}
+
+.face-wrapper-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    gap: 5px;
+}
+
+@keyframes moveMargin {
+    0% {
+        margin-top: 0px;
+    }
+    50% {
+        margin-top: -5px;
+    }
+    100% {
+        margin-top: 0px;
+    }
+}
+
+.face-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    aspect-ratio: 1 / 0.8;
+    overflow: hidden;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+
+    &:hover {
+        border-color: #c6ff3b;
+        cursor: pointer;
+
+        svg {
+            animation: moveMargin 0.4s ease-in-out forwards;
+        }
+    }
+}
+
+.hair-theme-1 {
+    .front-hair, .eyebrows {
+        --color-a: #c5c5c5;
+    }
+    .back-hair {
+         --color-a: #b9b9b9;
+    }
+}
+
+.hair-theme-2 {
+    .front-hair, .eyebrows {
+        --color-a: #e7ad4b;
+    }
+    .back-hair {
+        --color-a: #cd9029;
+    }
+}
+
+.hair-theme-3 {
+    .front-hair, .eyebrows {
+        --color-a: #c36800;
+    }
+    .back-hair {
+        --color-a: #9f5500;
+    }
+}
+
+.hair-theme-4 {
+    .front-hair, .eyebrows {
+        --color-a: #5d5d5d;
+    }
+    .back-hair {
+        --color-a: #515151;
+    }
+}
+
+.hair-theme-5 {
+    .front-hair, .eyebrows {
+        --color-a: #17adc5;
+    }
+    .back-hair {
+        --color-a: #149db3;
+    }
+}
+
+.hair-theme-6 {
+    .front-hair, .eyebrows {
+        --color-a: #7fbb9a;
+    }
+    .back-hair {
+        --color-a: #6a9d81;
+    }
+}
+
+.hair-theme-7 {
+    .front-hair, .eyebrows {
+        --color-a: #ccb0d7;
+    }
+    .back-hair {
+        --color-a: #b89cc3;
+    }
+}
+
+.hair-theme-8 {
+    .front-hair, .eyebrows {
+        --color-a: #ef68c6;
+    }
+    .back-hair {
+        --color-a: #d754af;
+    }
+}
+
+.hair-theme-9 {
+    .front-hair, .eyebrows {
+        --color-a: #7f82a3;
+    }
+    .back-hair {
+        --color-a: #696c8d;
+    }
+}
+
+.hair-theme-10 {
+    .front-hair, .eyebrows {
+        --color-a: #85b100;
+    }
+    .back-hair {
+        --color-a: #6b8f00;
+    }
+}
+
+
+//
+
+.face-theme-1 {
+    .face {
+        --color-a: #ffeccfff;
+    }
+}
+
+.face-theme-2 {
+    .face {
+        --color-a: #cb9d84;
+    }
+}
+
+.face-theme-3 {
+    .face {
+        --color-a: #b4cecf;
+    }
+}
+
+//
+
+.eyes-theme-1 {
+    .eyes {
+        --color-a: #429bc1;
+        --color-b: rgba(255, 255, 255, 0.5);
+        //--color-c: #bbb;
+        --color-c: #ffffff;
+    }
+}
+
+.eyes-theme-2 {
+    .eyes {
+        --color-a: #515495;
+        --color-b: rgba(255, 255, 255, 0.5);
+        --color-c: #ffffff;
+    }
+}
+
+.eyes-theme-3 {
+    .eyes {
+        --color-a: #893b19;
+        --color-b: rgba(255, 255, 255, 0.5);
+        --color-c: #ffffff;
+    }
+}
+
+.eyes-theme-4 {
+    .eyes {
+        --color-a: #477d33;
+        --color-b: rgba(255, 255, 255, 0.5);
+        --color-c: #ffffff;
+    }
+}
+
+.eyes-theme-5 {
+    .eyes {
+        --color-a: #c18e00;
+        --color-b: #ffc113;
+        --color-c: #ffffff;
+    }
+}
+
+.eyes-theme-6 {
+    .eyes {
+        --color-a: #ff2b2b;
+        --color-b: rgba(255, 255, 255, 0.5);
+        --color-c: #ffffff;
+    }
+}
+
+.mouth-theme-1 {
+    .mouth {
+        --color-c: #ffffff;
+    }
+}
